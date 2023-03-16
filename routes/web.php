@@ -38,7 +38,7 @@ Route::get('/{type}/{id}', function (Request $request, $type, $id) {
     // return $request->input('query');
     $env = env('WATCHMODE_KEY');
     // $query = $request->input('query');
-    $request_url = "https://api.watchmode.com/v1/title/345534/details/?apiKey={$env}&append_to_response=sources";
+    $request_url = "https://api.watchmode.com/v1/title/{$id}/details/?apiKey={$env}&append_to_response=sources";
 
 
     $response = Http::get($request_url);
@@ -66,8 +66,8 @@ Route::get('/{type}/{id}', function (Request $request, $type, $id) {
         }
     }
 
-    return $buy_sources;
 
+    // return $results;
     return view('pages.single', [
         "data" => $results,
         "rent_sources" => $rent_sources,

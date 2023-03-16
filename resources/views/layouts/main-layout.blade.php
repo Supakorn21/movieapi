@@ -41,9 +41,9 @@
                         <div class="w-auto hidden lg:block">
                             <button class="group relative p-0.5 font-heading block w-full md:w-auto text-lg text-gray-900 font-medium bg-gradient-cyan overflow-hidden rounded-10">
                                 <div class="absolute top-0 left-0 transform -translate-y-full group-hover:-translate-y-0 h-full w-full bg-gradient-cyan transition ease-in-out duration-500"></div>
-                                <div class="py-2 px-5 bg-white rounded-lg">
+                                <a href="/" class="py-2 px-5 bg-white rounded-lg block">
                                     <p class="relative z-10">Search</p>
-                                </div>
+                                </a>
                             </button>
                         </div>
                         <div class="w-auto lg:hidden">
